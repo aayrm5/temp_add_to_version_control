@@ -4,7 +4,8 @@ getwd()
 install.packages("openxlsx")
 install.packages(c("dmm","dplyr","plyr","reshape","ggplot2","data.table"))
 
-
+# Suggested not to import all the libraries at once.
+#Rather, import the library when you need it.
 
 library("openxlsx")
 data_excel=read.xlsx("IMDB_data.xlsx",sheetIndex=1,header=T)
